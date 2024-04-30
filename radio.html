@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>Operatore in JavaScript</title>
+    <script type="text/javascript">
+        function fn1() {
+            var rd1 = document.getElementById("rd1");
+            var rd2 = document.getElementById("rd2");
+            if (rd1.checked == true) {
+                alert("Selected Channel is :" + rd1.value);
+            }
+            else if (rd2.checked == true) {
+                alert("Selected Channel is :" + rd1.value);
+            }
+            else {
+                alert("No channel selected.");
+            }
+        }
+
+    </script>
+
+<body>
+    <input type="radio" name="grp1" id="rd1" value="Simple Snippwt">Simple Snippet<br>
+    <input type="radio" name="grp2" id="rd2" value="Telusko Learning">Telusko Learning<br>
+    <br>
+    <button onclick="fn1()" id="btn1">Click me</button>
+</body>
+</head>
+
+</html>

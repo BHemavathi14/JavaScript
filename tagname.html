@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Operatore in JavaScript</title>
+        <script type="text/javascript">
+            function ChangeStyling()
+            {
+                var para = document.getElementsByTagName("p");
+                // it is stored like array 
+                // wwe can access it using index 
+                for(var i=0;i<para.length;i++)
+                {
+                   para[i].style.fontSize=22;
+                }
+            }
+            
+        </script>
+    </head>
+    <body>
+        <p>This is paragraph1</p>
+        <p>This is paragraph2</p>
+        <p>This is paragraph3</p>
+        <p>This is paragraph4</p>
+        <p>This is paragraph5</p>
+        <p>This is paragraph6</p>
+
+        <button onclick="ChangeStyling()">Click me</button>
+
+    </body>
+</html>

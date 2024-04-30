@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>
+        If-Else COnsition
+    </title>
+    <script type="text/javascript">
+        document.write("<h1>If- else Statement</h1>");
+        var x = 6;
+        if (x % 2 == 0) {
+            document.write("even number");
+        }
+        // without if block we can't use else block 
+        else {
+            document.write("even number ");
+        }
+        // program for positive negative 0 
+        if (x > 0) {
+            document.write("positive number ");
+        }
+        else if (x == 0) {
+            document.write("Zero");
+        }
+        else {
+            document.write("Negative number ");
+        }
+
+        // find the number is positive or negative if number is positive check odd or even 
+
+        if (x > 0) {
+            document.write("positive number ");
+            if (x % 2 == 0) {
+                document.write("even number");
+            }
+            // without if block we can't use else block 
+            else {
+                document.write("even number ");
+            }
+        }
+        else if (x == 0) {
+            document.write("Zero");
+        }
+        else {
+            document.write("Negative number ");
+        }
+        // using logical operator
+        if(x>0 && x%2==0)
+        {
+            document.write("positive and even number ");
+        }
+
+    </script>
+</head>
+
+</html>

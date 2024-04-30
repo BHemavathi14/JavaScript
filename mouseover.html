@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Operatore in JavaScript</title>
+        <script type="text/javascript">
+            // mouse over and mouse out event 
+            function setNewImage()
+            {
+                document.getElementById("img1").src="lights.jpg";
+            }
+            function setOldImage()
+            {
+                document.getElementById("img1").src="img_mountains.jpg";
+            }
+            
+        </script>
+        <body>
+            <img onmouseover="setNewImage()" onmouseout="setOldImage()"
+            id="img1"  src="img_mountains.jpg" alt="mountain image ">
+        </body>
+    </head>
+</html>

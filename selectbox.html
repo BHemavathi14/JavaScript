@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Operatore in JavaScript</title>
+        <script type="text/javascript">
+           function fn1()
+           {
+                var select = document.getElementById("selectbox");
+                alert(select.options[select.selectedIndex].value);
+           }
+            
+        </script>
+    </head>
+    <body>
+        <select name="" id="selectbox" multiple>
+            <option value="Simple Snippets">Simple Snippets</option>
+            <option value="Telusko">Telusko</option>
+            <option value="code camp">code camp</option>
+            <option value="Developer">Developer</option>
+        </select>
+        <button onclick="fn1()">Click me</button>
+    </body>
+</html>

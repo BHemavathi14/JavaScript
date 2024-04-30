@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Operatore in JavaScript</title>
+        <script type="text/javascript">
+            // creating object
+
+            var Car = {
+                car_brand : "Tesla",
+                car_model : "Model 3",
+
+                teslaAutoPilot :function()
+                {
+                    document.write("This Car has Autopilot");
+                }
+            }
+
+            Car.teslaAutoPilot();
+
+            // creating constructor 
+
+            function Cars(car_brand,car_model,price)
+            {
+                this.car_brand =car_brand;
+                this.car_model=car_model;
+                this.price = price;
+                this.teslaAutoPilot = function()
+                {
+                    document.write("This car has Auto Pilot");
+                }
+            }
+
+            var c1 = new Cars("Maruthi" , "Model P" , 450000);
+
+            c1.teslaAutoPilot();
+            car.fuelType="Electric";
+            // delete the property
+            //delete Car.price;
+            // changing  data Type 
+            Car.price = "45000";
+
+            var str1 ="str"; // this is an string 
+            var str2 = new String(); // this is an object 
+            document.write(typeof(str1));
+            document.write(typeof(str2));
+        </script>
+    </head>
+</html>

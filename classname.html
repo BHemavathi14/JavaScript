@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Operatore in JavaScript</title>
+        <script type="text/javascript">
+            function changeStyling()
+            {
+                //var tag = document.getElementsByTagName("p");
+                var element = document.getElementsByClassName("mypara");
+                
+
+                for(var x=0;x<element.length;x++)
+                {
+                    element[x].style.color="violet";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <p class="mypara">
+            This is Paragraph1
+        </p>
+        <p> This is paragraph2</p>
+        <p class="mypara">This is paragraph3</p>
+        <p>This is paragraph4</p>
+        <p class="mypara">This is paragraph5</p>
+        <button onclick="changeStyling()">Click me</button>
+        <a href="#" class="mypara">This is link</a>
+    </body>
+</html>
